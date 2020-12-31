@@ -9,7 +9,7 @@ p=freshworks() #object for class is created
 #but key_name,value must be provided for sure in order to insert data in the data store
 p.ds_create('ravi',25)
 p.ds_create('teja',30,20) #20 means seconds
-# key value must be string(as mentioned in the problem statement)
+# key value must be string(as mentioned in the given problem statement)
 p.ds_create(8,25)
 # error will be thrown as the key we provided is not a string, the length of the string can be 32 at max
 p.ds_create('sai',30)
