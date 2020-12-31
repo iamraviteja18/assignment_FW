@@ -53,6 +53,7 @@ class freshworks:
                     del dic[key] #deleting the key, val from the store
                     print("key is successfully deleted")
                 else:
+                    del dic[key]
                     print("Error: Key no longer exists as time-to-live of",key,"has expired") #error when time to live of the given key gets expired
 
 
