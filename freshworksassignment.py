@@ -36,7 +36,7 @@ class freshworks:
                     s=str(key)+":"+str(k[0]) # returning the key name,value in JasonObject format,"keyname:val"
                     print(s)
                 else:
-                    del dic[key] #deleting the key, val from the store as tome-to-live got expired
+                    del dic[key] #deleting the key, val from the store as time-to-live got expired
                     print("Error: Key no longer exists as time-to-live of",key,"has expired") #error when time to live of the given key gets expired
 
  
@@ -53,7 +53,7 @@ class freshworks:
                     del dic[key] #deleting the key, val from the store
                     print("key is successfully deleted")
                 else:
-                    del dic[key] #deleting the key, val from the store as tome-to-live got expired
+                    del dic[key] #deleting the key, val from the store as time-to-live got expired
                     print("Error: Key no longer exists as time-to-live of",key,"has expired") #error when time to live of the given key gets expired
 
 
@@ -74,6 +74,6 @@ class freshworks:
                 l.append(k[1])
                 dic[key]=l #modifying the data with given input
             else:
-                del dic[key] #deleting the key, val from the store as tome-to-live got expired
+                del dic[key] #deleting the key, val from the store as time-to-live got expired
                 print("Error: Key no longer exists as time-to-live of",key,"has expired") #error when time to live of the given key gets expired
 
