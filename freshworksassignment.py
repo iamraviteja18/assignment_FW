@@ -74,5 +74,6 @@ class freshworks:
                 l.append(k[1])
                 dic[key]=l #modifying the data with given input
             else:
+                del dic[key]
                 print("Error: Key no longer exists as time-to-live of",key,"has expired") #error when time to live of the given key gets expired
 
